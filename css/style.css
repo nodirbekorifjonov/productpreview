@@ -1,0 +1,216 @@
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/fraunces-v24-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fraunces-v24-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f2eae2;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.64;
+  font-weight: 500;
+  color: #6c7289;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.card {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card__content {
+  padding: 3.2rem;
+}
+
+h5 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: "Fraunces";
+  color: #1c232b;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+
+.description {
+  margin-bottom: 2.9rem;
+}
+
+.price {
+  display: flex;
+  gap: 1.9rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.price h1 {
+  color: #3d8168;
+  margin: 0;
+}
+
+.price p {
+  font-size: 1.3rem;
+  line-height: 1.77;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: #3d8168;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 6.2rem 1.5rem 6.3rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1a4032;
+}
+
+@media screen and (max-width: 725px) {
+  body {
+    padding: 2.8rem 0;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .card {
+    width: 343px;
+    flex-direction: column;
+  }
+
+  .card__content {
+    padding: 2.4rem;
+  }
+
+  .card-img {
+    width: 343px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  h1 {
+    margin-bottom: 1.6rem;
+  }
+
+  .description {
+    margin-bottom: 2.4rem;
+  }
+
+  .price {
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 1.5rem 9.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 1.6rem;
+  }
+}
